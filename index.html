@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Portfolio | Thao Dan</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Portfolio</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Activities</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#experiences" class="nav-link">Experiences</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Vo Nguyen Thao Dan</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>My name is Vo Nguyen Thao Dan. Now, I am living and studying at RMIT Uniuversity as major of Digital Marketing in Ho Chi Minh city.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn" onclick="scrollToContact()">Hire Me</button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.facebook.com/vonguyenthaodan.vonguyenthaodan" target="_blank"><i class="uil uil-facebook"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/dan-thao-nguyen-vo-541a4621b/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>With a strong academic foundation in marketing from RMIT, I am seeking the
+                        Marketer Intern position to gain hands-on experience, refine my marketing skills,
+                        and contribute my creativity and enthusiasm to your dynamic marketing team. I am
+                        excited to be a part of an organization that values innovation and offers growth
+                        opportunities in the ever-evolving field of marketing.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Personal Contacts</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Phone and Email </span>
+                        <span>+84 - 0817156165 </span>
+                        <span>vonguyenthaodan@gmail.com</span>
+                    </div>
+                </div> -->
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>2021-2024</span>
+                        <span>RMIT University</span>
+                        <span>Bachelor of Digital Marketing</span>
+                        <span>Minor of Tourism & Hospitality</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Communication</span>
+                        <span>Work under pressure</span>
+                        <span>Critical thinking and creative</span>
+                        <span>Team working</span>   
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+    <!-- -------------- Activities ---------------- -->
+    
+    <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Activities</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-box" onclick="openPopup('checkbox1')">
+                <i class="uil uil-briefcase-alt" id="checkbox1"></i>
+                <h2 class="activity-title">RMIT Charity Event “Delivering Smiles 2023”</h2>
+                <h3 class="activity-role">Content & Event Planner</h3>
+                <label>06/2023- 09/2023</label>
+            </div>
+            <div class="project-box" onclick="openPopup('checkbox2')">
+                <i class="uil uil-users-alt" id="checkbox2"></i>
+                <h2 class="activity-title">Content Marketing Strategy for “MOT”</h2>
+                <h3 class="activity-role">Copywriter</h3>
+                <label>11/2022- 02/2023</label>
+            </div>
+        </div>
+    </section>
+    
+
+    
+<!-- -------------- Popup Container ---------------- -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <h2 id="popupTitle">Title Text</h2>
+        <div id="popupImage" class="popup-image"></div>
+        <p id="popupText">Hello</p>
+    </div>
+</div>
+
+    <!-- -------------- Certifications ---------------- -->
+    <section class="section" id="certifications">
+        <div class="top-header">
+            <h1>Certifications</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-medal"></i>
+                <h2 class="activity-title">6.5 IELTS Certificate</h3>
+                <label>2019</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h2>Microsoft Office Suit Certificate</h3>
+                <label>2021</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h2>RMIT Certificate of English Completion</h3>
+                <label>2021</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h2>Certificate of Recognition Student Ambassador Team</h3>
+                <h3>Coordinator (Event Team)</h3>
+                <label>2023</label>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- -------------- Experiences ---------------- -->
+    <section class="section" id="experiences">
+        <div class="top-header">
+            <h1>Experiences</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-box" onclick="openPopup('checkbox3')">
+                <i class="uil uil-users-alt" id="checkbox3"></i>
+                <h2 class="activity-title">ITEACH VN</h2>
+                <h3>Copywriter</h3>
+                <label>01/2021- 12/2021</label>
+            </div>
+            <div class="project-box" onclick="openPopup('checkbox4')">
+                <i class="uil uil-users-alt" id="checkbox4"></i>
+                <h2>ITEACH VN</h2>
+                <h3>Content Planner</h3>
+                <label>01/2022- 12/2022</label>
+            </div>
+            <div class="project-box" onclick="openPopup('checkbox5')">
+                <i class="uil uil-users-alt" id="checkbox5"></i>
+                <h2>RMIT STUDENT AMBASSADOR Under RMIT Recruitment Department</h2>
+                <h3>Coordinator for Event Team</h3>
+                <label>05/2021- Present</label>
+            </div>
+            <div class="project-box" onclick="openPopup('checkbox6')">
+                <i class="uil uil-users-alt" id="checkbox6"></i>
+                <h2>KYNA ENGLISH</h2>
+                <h3>English Teacher</h3>
+                <label>03/2023- Present</label>
+            </div>
+        </div>
+    </section>
+
+       
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have any questions for me, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: vonguyenthaodan@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +84 - 0817156165</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Thao Dan</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Activities</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#certifications">Certifications</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#experiences">Experiences</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.facebook.com/vonguyenthaodan.vonguyenthaodan" target="_blank"><i class="uil uil-facebook"></i></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/dan-thao-nguyen-vo-541a4621b/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Thao Dan</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    
+        function openPopup(checkboxId) {
+    var popup = document.getElementById('popup');
+    var popupTitle = document.getElementById('popupTitle');
+    var popupText = document.getElementById('popupText');
+    var popupImage = document.getElementById('popupImage');
+
+    if (checkboxId === 'checkbox1') {
+    popupTitle.textContent = 'RMIT Charity Event “Delivering Smiles 2023”';
+    popupImage.style.backgroundImage = 'url(charity.png)'; // Corrected line
+    popupText.textContent = 'Organize content on Fanpage, Plan and organize funding events, and Communicate with sponsors';
+    } else if (checkboxId === 'checkbox2') {
+        popupTitle.textContent = 'Content Marketing Strategy for “MOT”';
+        popupImage.style.backgroundImage = 'url(content.png)'; // Corrected line
+        popupText.textContent = ' Copywriting,  Organizing ideas for brand development,  Market research,  Planning content for social media';
+    } else if (checkboxId === 'checkbox3') {
+        popupTitle.textContent = 'ITEACH VN - Copywriter';
+        popupImage.style.backgroundImage = 'url(1.png)'; // Corrected line
+        popupText.textContent = 'Write and upload content of advertising posts via Facebook, Forum, and  Organize online lessons for English courses, Teaching Assistant, Sales English courses through social networks';
+    } else if (checkboxId === 'checkbox4') {
+        popupTitle.textContent = 'ITEACH VN - Content Planner';
+        popupImage.style.backgroundImage = 'url(2.png)'; // Corrected line
+        popupText.textContent = 'Social Media Admin: Fanpage increased 40% interaction rate; Group increased 100%, Organize and Design posts content on social media (Facebook, TikTok), Increase sales through social networks, Contact with stakeholders, sponsors, and vendors (brochures, leaflets, gifts…), Plan and Operate weekly online English events and monthly events offline';
+    } else if (checkboxId === 'checkbox5') {
+        popupTitle.textContent = 'RMIT STUDENT AMBASSADOR Under RMIT Recruitment Department - Coordinator';
+        popupImage.style.backgroundImage = 'url(3.png)'; // Corrected line
+        popupText.textContent = 'Organize weekly, and monthly events with up to 7000 visitors, Consulting with target customers (potential students, parents), Customer Assisting';
+    } else if (checkboxId === 'checkbox6') {
+        popupTitle.textContent = 'KYNA English - Englkish Teacher';
+        popupImage.style.backgroundImage = 'url(4.png)'; // Corrected line
+        popupText.textContent = 'Teaching English communication for office workers, Organize online lessons for English courses,  Prepare materials and activities';
+    } 
+
+    popup.style.display = 'block';
+}
+
+    
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
+
+    
+</body>
+</html>
